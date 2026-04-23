@@ -1,10 +1,4 @@
-FROM ubuntu:24.04
-
-
-RUN apt update && \
-    apt install -y \
-        openjdk-25-jdk && \
-    apt clean
+FROM eclipse-temurin:25-jdk
 
 WORKDIR /app
 
